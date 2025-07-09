@@ -1,0 +1,31 @@
+body{
+    background-color: #b0c4de;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 1.7;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+.box{
+    width: 500px;
+    height: max-content;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+}
+#heading{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    background-color: rgba(95, 95, 250, 0.4);
+    padding: 0.5rem;
+}
+span{
+    font-size: 30px;
+    text-align: center;
+    justify-self: end;
+    align-self: center;
+}

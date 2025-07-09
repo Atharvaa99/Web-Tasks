@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Down</title>
+    <style>
+        aside{
+            width: 200px;
+            background-color: rgb(60, 58, 58);
+            color: antiquewhite;
+            height: 500px;
+        }
+        #menu {
+            display: none;
+            width: 30px;
+            height: 30px;
+        }
+
+        nav {
+            display: none;
+        }
+        #menu:checked+nav {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <label for="menu" style="font-size: 30px;">☰</label>
+        <input type="checkbox" id="menu">
+        <nav>
+            <ul>
+                <li id="List"><a href="#" style="color: antiquewhite; ">HOME</a></li><br>
+                <li id="List"><a href="#" style="color: antiquewhite; ">ABOUT</a></li><br>
+                <li id="List"><a href="#" style="color: antiquewhite; ">GALLERY</a></li><br>
+                <li id="List"><a href="#" style="color: antiquewhite; ">FEEDBACK</a></li><br>
+                <li id="List"><a href="#" style="color: antiquewhite; ">CONTACT</a></li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+
+</html>

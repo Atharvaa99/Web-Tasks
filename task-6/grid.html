@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 100px;
+            padding: 20px;
+            justify-content:space-evenly;
+            background-color: antiquewhite;
+        }
+        .card{
+            border-radius: 10px;
+            height: 150px;
+            width: 175px;
+            background-color: rgb(115, 107, 107);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="card"><img src="image.jpg" alt="image 1"></div>
+        <div class="card"><img src="image.jpg" alt="image 2"></div>
+        <div class="card"><img src="image.jpg" alt="image 3"></div>
+        <div class="card"><img src="image.jpg" alt="image 4"></div>
+        <div class="card"><img src="image.jpg" alt="image 5"></div>
+        <div class="card"><img src="image.jpg" alt="image 6"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Attribute Selectors Example</title>
+  <style>
+    input[type="text"] {
+      border: 2px solid #3498db;
+      padding: 8px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    a[target="_blank"] {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    input::placeholder {
+      color: gray;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Styled Form and Links</h2>
+
+  <input type="text" placeholder="Enter your name">
+  <input type="text" placeholder="Enter your city">
+
+  <p>Visit these websites:</p>
+  <a href="#" target="_blank">Blank</a><br>
+</body>
+</html>

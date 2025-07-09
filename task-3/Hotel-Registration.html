@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOTEL REGISTRATION.</title>
+    </head>
+    <body>
+        <header>
+            <h1><strong><em><mark>HOTEL REGISTRATION.</mark></em></strong></h1>
+            <form>
+
+                <fieldset>
+                    <legend><em>THE TYPE OF ROOM (required):</em> </legend>
+                    <input type="radio" id="roomChoice1" name="Hotel" value="Economy" required>
+                    <label for="roomChoice1">ECONOMY</label>
+
+                    <input type="radio" id="roomChoice2" name="Hotel" value="Superior" required>
+                    <label for="roomChoice2">SUPERIOR</label>
+
+                    <input type="radio" id="roomChoice3" name="Hotel" value="Penthouse" required>
+                    <label for="roomChoice1">PENTHOUSE</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><em>CHOOSE CLASSES TO ATTEND (optional):</em></legend>
+                    <input type="checkbox" id="Yoga" name="Yoga">
+                    <label for="Yoga">Yoga(+$10)</label>
+                    <input type="checkbox" id="coffeeMaking" name="coffeeMaking">
+                    <label for="coffeMaking">Coffe-Making(+$20)</label>
+                    <input type="checkbox" id="balloonArt" name="balloonArt">
+                    <label for="balloonArt">Balloon-Art(+$5)</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><em>ADDITIONAL INSTRUCTIONS (optional):</em></legend>
+                    <textarea id="instructions" rows="5" cols="100"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend><em>Choose an mode of Transportation (optional):</em></legend>
+                    <select name="modeOfTransportation" id="modeOfTransportation">
+                        <option value="">--choose an option--</option>
+                        <option value="none">None</option>
+                        <option value="bike">Bike</option>
+                        <option value="car">Car</option>
+                        <option value="bus">Bus</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend><em>Personal Information(required):</em></legend>
+                    <label for="name">Customer Name:</label>
+                    <input type="text" id="name" name="customerName" required><br><br>
+                    <label for="Phonenumber">Customer Phone no:</label>
+                    <input type="tel" id="Phonenumber" name="customerPhone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="eg:100-234-5678"><br><br>
+                    <label for="email">Customer Email:</label>
+                    <input type="email" required id="email" name="customerEmail"><br><br>
+
+                    <label for="country">Choose Your Country:</label>
+                    <select name="Country" id="Country">
+                        <option value="">---choose an option---</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                    </select>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </header>
+    </body>
+</html>

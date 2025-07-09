@@ -1,0 +1,20 @@
+<!-- Drawing a circle. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing a circle.</title>
+ </head>
+ <body>
+    <canvas id="circle" width="1000" height="950" style="border: 10px solid bisque;"></canvas>
+    <script>
+        const canvas = document.getElementById("circle");
+        const ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(500, 500, 400, 2*Math.PI, 0);
+        ctx.fillStyle = "grey"
+        ctx.fill();
+    </script>
+ </body>
+ </html>

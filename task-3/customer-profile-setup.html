@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER PROFILE FORM</title>
+</head>
+<body>
+    <header>
+        <h1><strong><em><mark>CUSTOMER INFORMATION</mark></em></strong></h1>
+    </header>
+    <form >
+        <fieldset>
+            <legend><em>Personal Information(required):</em></legend>
+            <label for="name">Customer Name:</label>
+                    <input type="text" id="name" name="customerName" required><br><br>
+                    <label for="Phonenumber">Customer Phone no:</label>
+                    <input type="tel" id="Phonenumber" name="customerPhone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="eg:100-234-5678"><br><br>
+                    <label for="email">Customer Email:</label>
+                    <input type="email" required id="email" name="customerEmail"><br><br>
+                    <label for="country">Choose Your Country:</label>
+                    <select name="Country" id="Country" required>
+                        <option value="">---choose an option---</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                    </select><br><br>
+                
+                    <label>CHOSSE GENDER:</label><br>
+                    <input type="radio" id="male" value="male" name="gender" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" value="other" name="gender" required>
+                    <label for="other">other</label><br><br>
+
+                    <label>Prefered Mode of Communication:</label><br>
+                    <input type="checkbox" name="modeCommunication" id="email" required>
+                    <label for="email">E-mail</label>
+                    <input type="checkbox" name="modeCommunication" id="SMS" required>
+                    <label for="SMS">SMS</label>
+                    <input type="checkbox" name="modeCommunication" id="call" required>
+                    <label for="call">Call</label><br><br>
+
+                    <label>Additinal Information(optional):</label><br>
+                    <textarea name="addInfo" id="addInfo" rows="5" cols="100"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend><em>Professional Information(required):</em></legend>
+
+            <label for="name">Company Name:</label>
+                    <input type="text" id="name" name="companyName" required><br><br>
+                    <label for="Telenumber">Company Phone no:</label>
+                    <input type="tel" id="Telenumber" name="companyPhone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="eg:100-234-5678"><br><br>
+                    <label for="c-email">Company Email:</label>
+                    <input type="email" required id="c-email" name="companyEmail"><br><br>
+
+                    <label for="Department">Choose Your Department:</label>
+                    <select name="Department" id="Department" required>
+                        <option value="">---choose an option---</option>
+                        <option value="HR">HR</option>
+                        <option value="Finance">Finance</option>
+                        <option value="R&D">R&D</option>
+                        <option value="Sales">Sales</option>
+                    </select><br><br>
+                
+                    <label>CHOSSE INDUSTRY:</label><br>
+                    <input type="radio" id="Auto" value="auto" name="Industry" required>
+                    <label for="Auto">Automative</label>
+                    <input type="radio" id="Electronics" value="Electronics" name="Industry" required>
+                    <label for="Electronics">Electronics</label>
+                    <input type="radio" id="other" value="other" name="Industry" required>
+                    <label for="other">other</label><br><br>
+
+                    <label>Job Type:</label><br>
+                    <input type="checkbox" name="jobType" id="Remote" required>
+                    <label for="Remote">Remote</label>
+                    <input type="checkbox" name="jobType" id="On-site" required>
+                    <label for="On-site">On-site</label>
+                    <input type="checkbox" name="jobType" id="Hybrid" required>
+                    <label for="Hybrid">Hybrid</label><br><br>
+
+                    <label>Information about your role:</label><br>
+                    <textarea name="addInfo" id="addInfo" rows="5" cols="100"></textarea>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- Drawing Multiple Shapes and Text. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Multiple Shapes and Text</title>
+</head>
+<body>
+    <canvas id="Shapes" width="1000" height="950" style="border: 10px solid khaki ;"></canvas>
+    <script>
+        const canvas = document.getElementById("Shapes");
+        const ctx = canvas.getContext("2d");
+        // rectangle.
+        ctx.fillStyle="bisque";
+        ctx.fillRect(200,100,500,100)
+        
+        // circle
+        ctx.beginPath();
+        ctx.arc(250,350,100,0,2*Math.PI)
+        ctx.fillStyle = "grey"
+        ctx.fill();
+        
+        // line 
+        ctx.moveTo(0,400)
+        ctx.lineTo(1000,0)
+        ctx.strokeStyle = "burlywood" 
+        ctx.stroke();
+
+        //text
+        ctx.font = "100px Courier New"
+        ctx.fillStyle = "salmon"
+       ctx.fillText("Hello Canvas!",120, 550);
+
+    </script>
+</body>
+</html>

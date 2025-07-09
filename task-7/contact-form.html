@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0 ">
+        <meta charset="UTF-8">
+        <title>Contact Form</title>
+        <style>
+            body{
+                background-color: blanchedalmond;
+                margin: 0px;
+            }
+            header{
+                background-color: cadetblue;
+                display: block;
+                position: relative;
+                margin: 0px;
+                text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+            .container{
+                position: fixed;
+                background-color: white;
+                width: 40%;
+                height: 40%;
+                border-radius: 10px;
+                border-style:hidden;
+                top: 30%;
+                left:30%;
+                gap: 20px;
+            }
+            #title{
+                padding: 10px;
+                display: block;
+                margin: 10px;
+            }
+            .form{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 30px;
+                justify-items:center;
+                margin: 0px;
+                padding: 20px;
+                border: 20px;
+            }
+            #submit{
+                width: 150px;
+                height: 50px;
+                border-radius: 10px;
+                border-style: hidden;
+                color: white;
+                background-color: rgba(9, 9, 9, 0.857);
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            #input{
+                height:30px ;
+                width:90%;
+                border-radius:5px; 
+                background-color:whitesmoke; 
+                border-style: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+           <h1>CONTACT FORM</h1>
+        </header>
+        <main>
+            <div class="container">
+                <div id="title">
+                    <p style="font-size: 20px;font-weight: 500; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">SEND US A MESSAGE.</p>
+                    <p>Please fill in the form below to get in touch with us.</p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="First name" id="input">
+                    <input type="text" placeholder="Last name" id="input" >
+                    <input type="email" placeholder="Email Address" id="input" >
+                    <input type="tel" placeholder="Phone Number" id="input" >
+                    <textarea type="text" placeholder="MESSAGE" max="200" id="input" style="height:50px ;"></textarea>
+                    <div role="button"><button type="submit" id="submit">SUBMIT</button></div>
+                </div>  
+            </div>
+        </main>
+    </body>
+</html>

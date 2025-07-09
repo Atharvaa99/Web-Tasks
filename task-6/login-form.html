@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: antiquewhite;
+            font-family: 'Courier New', Courier, monospace;
+            align-items: center;
+        }
+        header, footer{
+            margin: 0;
+            background-color: darkslategrey;
+            padding: 5px;
+            text-align: center;
+            height: 5rem;
+        }
+        .flex-container{
+            display: flexbox;
+            justify-content:center;
+            padding:11% 30%;
+        }
+        .form{
+            padding: 10rem;
+            align-items: center;
+            background-color: azure;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header><h1><strong>Log-in</strong></h1></header>
+    <div class="flex-container">
+    <div class="form">
+    <form>
+        <label for="UserName" style="font-size: larger; font-weight: 600">User Name:</label>
+        <input type="text" name="UserName" id="UserName" placeholder="enter user name"><br><br>
+        <label for="password" style="font-size: larger; font-weight: 600">  Password:</label>
+        <input type="password" name="password" id="password" placeholder="enter password">
+        <br><br><br>
+        <button type="submit" >Submit</button>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Login-Form</p>
+    </footer>
+</body>
+</html>

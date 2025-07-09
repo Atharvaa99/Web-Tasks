@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Flex</title>
+    <style>
+        li::marker {
+            color: gold;
+            content: "✦";
+        }
+
+        .outer {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            height: 100vh;
+            padding: 1rem;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+        }
+
+        .price-card {
+            display: flex;
+            background-color:rgba(0, 0, 0, 0.3);
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+            width: 300px;
+            height: 350px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            gap: 1rem;
+            color: #cfd8dc;
+            transition: transform 2s ease-in-out, box-shadow 1s ease-in;
+        }
+        .price-card:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid gold;
+        }
+        .planName {
+            text-align: center;
+            border-bottom: 1px solid;
+        }
+
+        .features {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        button {
+            align-self: center;
+            padding: 0.5rem 1.2rem;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="price-card">
+            <div class="planName">
+                <h2>Basic Plan</h2>
+                <h4>Price: 20$</h4>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button type="button"> Subscribe</button>
+            </div>
+        </div>
+        <div class="price-card">
+            <div class="planName">
+                <h2>Advance Plan</h2>
+                <h4>Price: 30$</h4>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                </ul>
+                <button type="button"> Subscribe</button>
+            </div>
+        </div>
+        <div class="price-card">
+            <div class="planName">
+                <h2>Pro Plan</h2>
+                <h4>Price: 40$</h4>
+            </div>
+            <div class="features">
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                    <li>Feature 6</li>
+                </ul>
+                <button type="button"> Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

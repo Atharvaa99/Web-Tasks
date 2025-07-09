@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Display Types</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .box {
+      background-color: lightblue;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #333;
+    }
+
+    .box1 {
+      display: block; /* default */
+      width: 200px;
+    }
+
+    .box2 {
+      display: inline;
+      width: 200px; /* will not apply! inline ignores width */
+    }
+
+    .box3 {
+      display: inline-block;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Display: block (default)</h2>
+  <div class="box box1">This is block</div>
+
+  <h2>Display: inline</h2>
+  <div class="box box2">This is inline</div>
+
+  <h2>Display: inline-block</h2>
+  <div class="box box3">This is inline-block</div>
+
+</body>
+</html>

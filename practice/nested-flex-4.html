@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Flex</title>
+    <style>
+        .outer{
+            display: flex;
+            flex-direction: column;
+        }
+        .inner{
+            display: flex;
+            flex-direction: row;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+            width: 300px;
+            height: 150px;
+            padding: 1rem;
+            margin: 1rem;
+            gap: 2rem ;
+        }
+        .icon{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <p class="icon">🧠</p>
+            <div class="text">
+                <h3>Fast Learning</h3>
+                <p>Learn at your own pace with flexibile modules.</p>
+            </div>
+        </div>
+        <div class="inner">
+            <p class="icon">⚡️</p>
+            <div class="text">
+                <h3>High Performance</h3>
+                <p>Built with speed and optimization in mind.</p>
+            </div>
+        </div>
+        <div class="inner">
+            <p class="icon">🔒</p>
+            <div class="text">
+                <h3>Secure</h3>
+                <p>Privacy-first, end-to-end encrypted architecture.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

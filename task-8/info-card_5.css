@@ -1,0 +1,25 @@
+body{
+    background-color: #0f0f0f;
+    color: #00ff91;
+    font-family:  'Courier New', Courier, monospace;
+}
+
+.container{
+    background-color: #1a1a1d;
+    width: 500px;
+    height: auto;
+    padding: 2rem;
+    margin: 300px auto;
+    border-radius: 5px;
+    border: 2px solid #00ff91d9;
+    box-shadow: 0 0 10px #00ff91d8;
+}
+h3{
+    text-align: end;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter:grayscale(1);
+}

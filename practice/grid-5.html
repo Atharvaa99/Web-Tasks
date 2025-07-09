@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        @media screen and (max-width: 1000px) {
+            .grid{
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            #heading,
+            #bottom,
+            #nav,
+            #content,
+            #sidebar{
+                grid-column: 1/-1;
+            }
+        }
+        body{
+            margin: 0;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            background-color: aquamarine;
+            gap: 1.5rem;
+            padding: 0.5rem;
+            min-height: 100vh;
+        }
+        .element{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #heading{
+            grid-column: 1/4;
+            background-color: aqua;
+        }
+        #bottom{
+            grid-column: 1/4;
+            background-color: rgb(123, 204, 247);
+        }
+        #nav{
+            background-color: rgb(249, 231, 207);
+        }
+        #content{
+            background-color: azure;
+        }
+        #sidebar{
+            background-color: rgb(252, 206, 150);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="element" id="heading">
+            <h3>Header</h3>
+        </div>
+        <div class="element" id="nav">
+             <h4>Nav</h4>
+        </div>
+        <div class="element" id="content">
+             <h4>Content</h4>
+        </div>
+        <div class="element" id="sidebar">
+             <h4>Sidebar</h4>
+        </div>
+        <div class="element" id="bottom">
+            <h3>Footer</h3>
+        </div>
+    </div>
+</body>
+</html>

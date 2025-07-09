@@ -1,0 +1,36 @@
+body{
+    background-color: #fbeec1;
+    word-spacing: 3px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    background-color: #e27b7b;
+    margin: 15rem auto;
+    height: auto;
+    width: 40rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 5px 5px 6px rgb(126, 124, 124);
+}
+img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 20px 100px;
+}
+section{
+    margin-left:20px ;
+    font-size: 18px;
+}
+h1{
+    display: inline-block;
+    margin-left:150px ;
+    width: 290px;
+    text-align: center;
+    border-bottom: 2px solid rgb(146, 12, 12);
+}

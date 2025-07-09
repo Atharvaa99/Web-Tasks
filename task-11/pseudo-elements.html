@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-Elements Example</title>
+  <style>
+    .styled-paragraph::first-letter {
+      font-size: 60px;
+      font-weight: bold;
+      color: darkred;
+    }
+
+    .styled-paragraph::before {
+      content: "✅ ";
+      font-weight: bold;
+    }
+
+    .styled-paragraph::after {
+      content: " 🔚";
+    }
+
+    .styled-paragraph {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Styled Paragraph with Pseudo-elements</h2>
+
+  <p class="styled-paragraph">
+    this paragraph uses ::first-letter, ::before, and ::after to style content visually.
+  </p>
+
+</body>
+</html>

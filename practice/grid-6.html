@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid & Flex</title>
+    <style>
+        li::marker {
+            color: gray;
+            content: "- ";
+        }
+
+        body {
+            background: linear-gradient(to bottom, #f1f3f5, #b5cff5);
+            font-family: monospace;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            padding-top: 1rem;
+            display: grid;
+            grid-template-rows: 0.2fr 1fr 0.5fr;
+            min-height: max-content;
+            min-width: max-content;
+            align-content: center;
+            gap: 1rem;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 40px rgba(122, 121, 121, 0.3);
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        #heading {
+            display: flex;
+            font-size: 18px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #plan {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 1rem;
+            cursor: grab;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        #basic-plan {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            height: 90%;
+            transition: transform 1s ease-out, box-shadow 1s ease-in;
+        }
+
+        #pro-plan {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            height: 90%;
+            transition: transform 1s ease-out, box-shadow 1s ease-in;
+        }
+
+        #enterprise-plan {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            height: 90%;
+            transition: transform 1s ease-out, box-shadow 1s ease-in;
+        }
+
+        button {
+            border: 0;
+            background-color: #ececec;
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        #basic-plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            background-color: #d1e3f8;
+        }
+
+        #pro-plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #d1e3f8;
+        }
+
+        #enterprise-plan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #d1e3f8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content" id="heading">
+            <h1>Feature Comparison Table</h1>
+        </div>
+        <div class="content" id="plan">
+            <div id="basic-plan">
+                <h2>Basic Plan</h2>
+                <ul>
+                    <li>Feature 1 ✅</li>
+                    <li>Feature 2 ❌</li>
+                    <li>Feature 3 ❌</li>
+                </ul>
+                <button>Buy Now</button>
+            </div>
+            <div id="pro-plan">
+                <h2> Pro Plan</h2>
+                <ul>
+                    <li>Feature 1 ✅</li>
+                    <li>Feature 2 ✅</li>
+                    <li>Feature 3 ❌</li>
+                </ul>
+                <button>Buy Now</button>
+            </div>
+            <div id="enterprise-plan">
+                <h2>Enterprise Plan</h2>
+                <ul>
+                    <li>Feature 1 ✅</li>
+                    <li>Feature 2 ✅</li>
+                    <li>Feature 3 ✅</li>
+                </ul>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="content" id="buttons">
+            <button>Sign Up</button>
+
+            <button>Contact Us</button>
+        </div>
+    </div>
+</body>
+
+</html>

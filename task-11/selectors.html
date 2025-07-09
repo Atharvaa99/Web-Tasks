@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Combinator Selectors</title>
+  <style>
+    div p {
+      color: blue;
+    }
+
+    div > p {
+      font-weight: bold;
+    }
+
+    h1 + p {
+      background-color: #ffffcc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Main Heading</h1>
+  <p>This paragraph comes right after &lt;h1&gt; and gets a yellow background.</p>
+  <p>This second paragraph after &lt;h1&gt; is not styled by h1 + p.</p>
+
+  <div>
+    <p>This is a direct child of div (blue & bold).</p>
+    <section>
+      <p>This is a nested paragraph inside a section (blue only).</p>
+    </section>
+  </div>
+
+  <p>This paragraph is outside any div and won't be affected by div selectors.</p>
+
+</body>
+</html>

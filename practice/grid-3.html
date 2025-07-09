@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 60vw;
+            height: 60vh;
+            padding: 1rem;
+            gap: 1rem;
+            background-color: rgb(231, 212, 187);
+        }
+        .elements{
+            border: 1px dashed black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #cell-1{
+            background-color: aliceblue;
+        }
+        #cell-2{
+            background-color: rgb(253, 154, 240);
+        }
+        #cell-3{
+            background-color: rgb(147, 252, 109);
+        }
+        #cell-4{
+            background-color: rgb(255, 216, 161);
+        }
+        #cell-5{
+            background-color: rgb(238, 147, 182);
+        }
+        #cell-6{
+            background-color: rgb(234, 205, 252);
+        }
+        #cell-7{
+            background-color: rgb(163, 254, 186);
+        }
+        #cell-8{
+            background-color: rgb(44, 117, 180);
+        }
+        #cell-9{
+            background-color: rgb(115, 164, 206);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="elements" id="cell-1">
+            <p >Cell 1</p>
+        </div>
+        <div class="elements"id="cell-2">
+            <p >Cell 2</p>
+        </div>
+        <div class="elements" id="cell-3">
+            <p >Cell 3</p>
+        </div>
+        <div class="elements" id="cell-4">
+            <p >Cell 4</p>
+        </div>
+        <div class="elements" id="cell-5">
+            <p >Cell 5</p>
+        </div>
+        <div class="elements" id="cell-6">
+            <p >Cell 6</p>
+        </div>
+        <div class="elements" id="cell-7">
+            <p >Cell 7</p>
+        </div>
+        <div class="elements" id="cell-8">
+            <p >Cell 8</p>
+        </div>
+        <div class="elements" id="cell-9">
+            <p >Cell 9</p>
+        </div>
+    </div>
+</body>
+</html>
