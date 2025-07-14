@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            font-family: 'Trebuchet MS';
+            line-height: 1.8;
+            letter-spacing: 2px;
+            word-spacing: 3px ;
+            font-size: 25px;
+       }
+
+        li::marker {
+            content: '⚡️';
+            color: goldenrod;
+        }
+
+        .container {
+            container-type: inline-size;
+            width: 600px;
+            background-color: antiquewhite;
+            resize: horizontal;
+            overflow: auto;
+            padding: 2rem;
+            border-radius: 5px ;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .card h2{
+            border-bottom: 1px solid red;
+        }
+        @container (max-width: 500px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="image.jpg" alt="image">
+            <div class="plan">
+                <h2>Plan</h2>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button>Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
