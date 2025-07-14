@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Rotate Card</title>
+  <style>
+    .rotate {
+      width: 300px;
+      height: 300px;
+      margin: 100px;
+      perspective: 1000px; /* Needed for 3D effect */
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+    }
+
+    .rotate:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .front {
+      background-color: rgb(241, 241, 174);
+    }
+
+    .back {
+      background-color: rgb(155, 197, 234);
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="rotate">
+    <div class="card-inner">
+      <div class="front">
+        Front Face
+      </div>
+      <div class="back">
+        Back Face
+      </div>
+    </div>
+  </div>
+</body>
+</html>
