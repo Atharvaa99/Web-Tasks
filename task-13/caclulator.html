@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form>
+        <label for="num1">Enter the First number for Calculation:</label>
+        <input type="number" id="num1" placeholder="Enter Here.">
+        <br>
+        <label for="num2">Enter the Second number for Calculation:</label>
+        <input type="number" id="num2" placeholder="Enter Here.">
+        <br>
+        <label for="operand">Enter the operation for Calculation:</label>
+        <input type="text" id="operand" placeholder="Eg: add ">
+        <br>
+        <br>
+        <button type="button" onclick="saveInput()">Click here to submit the Input</button>
+        <br>
+        <br>
+        <button type="button" onclick="result()">Click here to see the result.</button>
+        <br>
+        <br>
+        <button type="button" onclick="showNumbers()">Click here to see the input</button>
+    </form>
+    <h3 id="output"></h3>
+    <h3 id="showInput"></h3>
+    <script>
+        let x;
+        let y;
+        let operation;
+        function saveInput() {
+            x = Number(document.getElementById("num1").value);
+            y = Number(document.getElementById("num2").value);
+            operation = (document.getElementById("operand").value);
+            alert("Inputs submitted!");
+        }
+        function showNumbers() {
+            document.getElementById("showInput").textContent = `You have entered ${x} and ${y} and the operation is ${operation}`
+        }
+        function result() {
+            let res;
+            switch (operation) {
+                case "add":
+                    res = x + y;
+                    break;
+                case "subtract":
+                    res = x - y;
+                    break;
+                case "division":
+                    res = x / y;
+                    break;
+                case "multiply":
+                    res = x * y;
+                    break;
+            }
+            document.getElementById("output").textContent = `Result is ${res}`
+        }
+
+    </script>
+
+</body>
+
+</html>
