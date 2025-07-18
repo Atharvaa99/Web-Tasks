@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Units.</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+        }
+        .cardWrapper{
+            container-type: Inline-size;
+            resize: horizontal;
+            overflow: auto;
+            background-color: whitesmoke;
+        }
+        .featureCard{
+            background-color: wheat;
+            display: flex;
+            height: auto;
+            flex-direction: row ;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2cqb;
+            font-size: 3cqb;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 2px;
+            line-height: 1.6;
+        }
+        .featureCard h3{
+            font-size: 3cqi;
+            text-decoration: underline rebeccapurple;
+        }
+        .content{
+            place-items: center;
+        }
+        .featureCard img{
+            height: auto;
+            width: 30cqi;
+            margin: 1cqb;
+        }
+        @container (max-width:600px){
+            .featureCard{
+                flex-direction: column;
+                text-align: center;
+                font-size: 5cqb;
+            }
+            .featureCard h3{
+                font-size: 6cqb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cardWrapper">
+        <div class="featureCard">
+            <img src="image.jpg" alt="image">
+            <div class="content">
+                <h3>Plan Title</h3>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+                <button type="button" onclick="buy()">Buy</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function buy(){
+            alert("Purchase Completed.");
+        }
+    </script>
+</body>
+</html>
